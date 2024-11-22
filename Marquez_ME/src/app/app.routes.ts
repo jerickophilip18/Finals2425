@@ -5,7 +5,6 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { NgModel } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [

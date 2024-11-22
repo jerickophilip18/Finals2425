@@ -1,6 +1,4 @@
-/* app.component.css */
 
-/* Navbar Styling */
 .navbar {
     background-color: #333;
     color: white;
@@ -37,7 +35,7 @@
     text-decoration: underline;
   }
   
-  /* Responsive styling for smaller screens */
+
   @media (max-width: 768px) {
     .navbar-links {
       display: none;

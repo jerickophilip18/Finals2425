@@ -1,4 +1,65 @@
-<div class="login">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    .login {
+      background-color: #e3f2fd;
+      border: 2px solid #bbdefb;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .login h1 {
+      font-size: 2rem;
+      color: #1976d2;
+      margin-bottom: 15px;
+    }
+
+    .login form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .login label {
+      font-size: 1rem;
+      color: #333;
+      text-align: left;
+    }
+
+    .login input {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #1976d2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login button:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <div class="login">
     <h1>Login</h1>
     <form>
       <label for="username">Username</label>
@@ -8,3 +69,5 @@
       <button type="submit">Login</button>
     </form>
   </div>
+</body>
+</html>
