@@ -1,0 +1,86 @@
+/* Consultation Schedule Container */
+.consultation-schedule {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.consultation-schedule h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for header */
+}
+
+/* Card Styles */
+.consultation-schedule .card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-schedule .card-header {
+  background-color: #007bff; /* Blue header background */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+/* List Group Items */
+.consultation-schedule .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 15px;
+  background-color: #ffffff; /* White background for list items */
+  border-bottom: 1px solid #ddd; /* Separator for list items */
+}
+
+.consultation-schedule .list-group-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.consultation-schedule .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 5px 10px;
+}
+
+.consultation-schedule .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+}
+
+/* Success Alert */
+.consultation-schedule .alert-success {
+  background-color: #28a745; /* Green background for success message */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .consultation-schedule {
+    padding: 15px;
+  }
+
+  .consultation-schedule h2 {
+    font-size: 1.5rem;
+  }
+
+  .consultation-schedule .list-group-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .consultation-schedule .btn-primary {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+  }
+}

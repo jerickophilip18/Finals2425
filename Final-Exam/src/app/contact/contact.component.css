@@ -1,0 +1,111 @@
+.contact-form {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for header */
+}
+
+/* Form Fields */
+.contact-form .form-label {
+  font-weight: bold;
+  color: #495057; /* Darker text for form labels */
+}
+
+.contact-form .form-control {
+  border-radius: 4px;
+  border: 1px solid #ced4da; /* Light gray border for form controls */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact-form .form-control:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Add focus shadow */
+}
+
+.contact-form .btn {
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.contact-form .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.contact-form .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.contact-form .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Input Group for Course Addition */
+.contact-form .input-group {
+  margin-top: 10px;
+}
+
+.contact-form .input-group .form-control {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.contact-form .input-group .btn {
+  border-radius: 0 4px 4px 0;
+}
+
+/* List Group Styling */
+.contact-form .list-group {
+  margin-top: 10px;
+}
+
+.contact-form .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.contact-form .list-group-item .btn-sm {
+  padding: 5px;
+}
+
+
+.contact-form .btn-success {
+  background-color: #2a28a7;
+  border: none;
+}
+
+.contact-form .btn-success:hover {
+  background-color: #372188;
+}
+
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 0.9rem;
+  }
+}
