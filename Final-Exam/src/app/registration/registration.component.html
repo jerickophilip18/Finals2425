@@ -1,0 +1,56 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Log-In</h2>
+  <form (ngSubmit)="onSubmit()" #registrationForm="ngForm" class="shadow p-4 bg-light rounded">
+
+    <div class="form-group">
+      <label for="name">User-Name</label>
+      <input
+        type="name"
+        id="name"
+        class="form-control"
+        [(ngModel)]="user.name"
+        name="name"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        [(ngModel)]="user.email"
+        name="email"
+        required
+      />
+    </div>
+
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        class="form-control"
+        [(ngModel)]="user.password"
+        name="password"
+        required
+        minlength="6"
+      />
+    </div>
+
+
+
+    <button
+      type="submit"
+      class="btn btn-primary btn-block"
+    >
+      Log-in
+    </button>
+  </form>
+
+
+  
+</div>
+

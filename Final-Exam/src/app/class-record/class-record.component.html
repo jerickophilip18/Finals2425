@@ -1,0 +1,112 @@
+<div class="container">
+  <h2>Class Record</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID Number</th>
+        <th>Name</th>
+        <th>Activity Type</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of paginatedRecords">
+        <td>{{ record.id }}</td>
+        <td>{{ record.name }}</td>
+        <td>{{ record.activityType }}</td>
+        <td>
+          <button (click)="viewStudent(record)">View</button>
+          <button (click)="openEditModal(record)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <div class="pagination">
+    <button [disabled]="currentPage === 1" (click)="changePage(currentPage - 1)">Previous</button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button [disabled]="currentPage === totalPages" (click)="changePage(currentPage + 1)">Next</button>
+  </div>
+
+  
+
+
+
+
+
+  <div class="modal" *ngIf="showModal">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <h3>Student Details</h3>
+      <p><strong>ID Number:</strong> {{ selectedStudent?.id }}</p>
+      <p><strong>Name:</strong> {{ selectedStudent?.name }}</p>
+      <p><strong>Activity Type:</strong> {{ selectedStudent?.activityType }}</p>
+      <p><strong>Email:</strong> {{ selectedStudent?.email }}</p>
+    </div>
+  </div>
+
+  
+
+<div class="modal" *ngIf="showEditModal">
+  <div class="modal-content">
+    <span class="close" (click)="closeEditModal()">&times;</span>
+    <h3>Edit Student Record</h3>
+    <form (ngSubmit)="saveEdits()">
+      <div>
+        <label for="editId">ID Number:</label>
+        <input
+          id="editId"
+          [(ngModel)]="editStudent.id"
+          name="id"
+        />
+      </div>
+      <div>
+        <label for="editName">Name:</label>
+        <input
+          id="editName"
+          [(ngModel)]="editStudent.name"
+          name="name"
+        />
+      </div>
+      <div>
+        <label for="editActivity">Activity Type:</label>
+        <input
+          id="editActivity"
+          [(ngModel)]="editStudent.activityType"
+          name="activityType"
+        />
+      </div>
+      <div>
+        <label for="editEmail">Email:</label>
+        <input
+          id="editEmail"
+          [(ngModel)]="editStudent.email"
+          name="email"
+        />
+      </div>
+      <div>
+        <label for="editPhone">Phone Number:</label>
+        <input
+          id="editPhone"
+          [(ngModel)]="editStudent.phoneNumber"
+          name="phoneNumber"
+        />
+      </div>
+      <div>
+        <label for="editAddress">Address:</label>
+        <input
+          id="editAddress"
+          [(ngModel)]="editStudent.address"
+          name="address"
+        />
+      </div>
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+</div>

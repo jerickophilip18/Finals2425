@@ -1,0 +1,112 @@
+/* Class Record Container */
+.class-record-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.class-record-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for header */
+}
+
+/* Table Styling */
+.class-record-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.class-record-container th,
+.class-record-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Increase spacing between columns */
+.class-record-container th {
+  padding-right: 30px; /* Add more right padding for spacing */
+}
+
+.class-record-container td {
+  padding-right: 30px; /* Add more right padding for spacing */
+}
+
+.class-record-container th,
+.class-record-container td {
+  border-right: 1px solid #ddd; /* Solid border between columns */
+}
+
+/* Actions column spacing */
+.class-record-container td button {
+  margin-left: auto;
+}
+
+/* Modal Styling */
+.class-record-container .modal-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.class-record-container .modal-content h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for modal header */
+}
+
+.class-record-container .modal-content p {
+  margin-bottom: 10px;
+}
+
+.class-record-container .modal-content input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.class-record-container .modal-content button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.class-record-container .modal-content button:hover {
+  background-color: #218838;
+}
+
+/* Close Button in Modals */
+.class-record-container .modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.class-record-container .modal-content .close:hover {
+  color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .class-record-container table {
+    font-size: 0.9rem;
+  }
+
+  .class-record-container .modal-content input {
+    font-size: 0.9rem;
+  }
+}
